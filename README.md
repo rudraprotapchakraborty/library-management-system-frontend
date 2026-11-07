@@ -1,5 +1,8 @@
 # Shelfwise · Library Management System (frontend)
 
+**Live:** https://library-management-system-frontend-ten-chi.vercel.app  
+**API:** https://library-management-system-backend-six.vercel.app
+
 The website for **Shelfwise**, a library management system. Readers browse the catalogue, borrow books and return them; librarians add titles, watch the shelves and see who has what. Built with **React 19**, **Vite**, **Tailwind CSS 4** and React Router. It talks to [library-management-system-backend](https://github.com/rudraprotapchakraborty/library-management-system-backend).
 
 This is an upgrade of a small RTK Query assignment: same books-and-borrowing idea, now with accounts, roles and a redesigned interface.
@@ -22,7 +25,7 @@ cp .env.example .env     # set GOOGLE_CLIENT_ID
 npm run dev              # http://localhost:3000
 ```
 
-Run the backend on port 5000 first; in development the dev server proxies `/api` to it. Production builds read the API address from `VITE_API_URL`.
+Run the backend on port 5000 first; in development the dev server proxies `/api` to it. Production builds call https://library-management-system-backend-six.vercel.app/api unless `VITE_API_URL` says otherwise.
 
 | Variable | Purpose |
 | --- | --- |
